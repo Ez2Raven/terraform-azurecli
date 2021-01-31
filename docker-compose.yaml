@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  terraform:
+    image: hashicorp/terraform:light
+    command: /bin/bash
+    container_name: terraform
+    volumes:
+      - ./workspace:/workspace
